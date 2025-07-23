@@ -5,10 +5,10 @@ This project demonstrates an enterprise-like multi-tier architecture on AWS usin
 ## Project Structure
 <pre>
 Terraform-3tier-architecture/  <br>
-├── backend/                   <br>
+├── backend-setup/                   <br>
 │   └── main.tf             # Backend setup (S3 + DynamoDB config)   <br>
 │
-└── three-tier/                                                     <br>
+└── three-tier-arch/                                                     <br>
     ├── main.tf             # Root configuration calling all modules <br>
     ├── variables.tf               <br>
     ├── outputs.tf          # Outputs from root module               <br>

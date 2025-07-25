@@ -19,7 +19,7 @@ variable "key_name" {
 }
 
 variable "subnet_id" {
-  description = "Private subnet ID for app EC2"
+  description = "Public subnet ID for app EC2"
   type        = string
 }
 

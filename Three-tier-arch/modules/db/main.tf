@@ -1,10 +1,5 @@
 # Security group for RDS - allows inbound only from app security group (passed as variable)
 
-variable "app_security_group_id" {
-  description = "Security Group ID of App Tier"
-  type        = string
-}
-
 resource "aws_security_group" "db_sg" {
   name        = "db_sg"
   description = "Allow DB access only from app tier"
@@ -26,7 +21,7 @@ resource "aws_security_group" "db_sg" {
   }
 }
 
-# Subnet group for RDS
+# Subnet group for RDS using private subnets
 
 resource "aws_db_subnet_group" "db_subnet_group" {
   name       = "rds-subnet-group"

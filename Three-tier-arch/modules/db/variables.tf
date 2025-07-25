@@ -1,3 +1,7 @@
+variable "app_security_group_id" {
+  description = "Security Group ID of App Tier"
+  type        = string
+}
 variable "vpc_id" {
   description = "VPC ID"
   type        = string
